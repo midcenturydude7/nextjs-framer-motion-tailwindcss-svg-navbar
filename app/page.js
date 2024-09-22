@@ -1,3 +1,7 @@
 export default function Home() {
-  return <div className="flex p-8 pb-20"></div>;
+  return (
+    <div className="flex min-h-screen items-start justify-center text-2xl font-semibold p-10">
+      Home Page
+    </div>
+  );
 }
