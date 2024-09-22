@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Nav from "./Navbar/Navbar";
+// import Nav from "./Navbar/Navbar";
 import { AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { cn } from "../lib/utils";
@@ -19,7 +19,10 @@ export default function MobileNav() {
     <>
       <div>
         <div className="fixed right-[0] p-[30px]">
-          <button className="flex h-[80px] w-[80px] cursor-pointer items-center justify-center rounded-full bg-slate-200/50">
+          <button
+            onClick={() => setIsActive(!isActive)}
+            className="flex h-[80px] w-[80px] cursor-pointer items-center justify-center rounded-full bg-slate-200/50"
+          >
             <div
               className={cn(
                 "w-full before:relative before:top-[5px] before:m-auto before:block before:h-px before:w-2/5 before:bg-slate-200/50 before:content-[''] before:[transition:transform_0.3s] after:relative after:-top-[5px] after:m-auto after:block after:h-px after:w-2/5 after:bg-slate-200/50 after:content-[''] after:[transition:transform_0.3s]",

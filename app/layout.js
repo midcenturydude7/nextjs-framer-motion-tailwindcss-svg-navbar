@@ -1,4 +1,5 @@
 import "./globals.css";
+import MobileNav from "./components/MobileNav";
 
 export const metadata = {
   title: "Create Next App",
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://use.typekit.net/rgm1dlw.css" />
       </head>
       <body className="bg-slate-900 font-[sofia-pro,_sans-serif] font-medium not-italic text-slate-100/70 antialiased">
+        <MobileNav />
         {children}
       </body>
     </html>
