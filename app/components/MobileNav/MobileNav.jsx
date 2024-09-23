@@ -21,7 +21,7 @@ export default function MobileNav() {
         <div className="fixed right-[0] z-10 p-[30px]">
           <button
             onClick={() => setIsActive(!isActive)}
-            className="flex h-[80px] w-[80px] cursor-pointer items-center justify-center rounded-full bg-slate-800/40"
+            className={cn("flex h-[80px] w-[80px] cursor-pointer items-center justify-center rounded-full bg-slate-500/80", isActive ? "bg-slate-800" : "")}
           >
             <div
               className={cn(

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { menuSlide } from "../../../lib/anim";
 import Links from "./Links/Links";
+import Footer from "./Footer/Footer";
 
 const navItems = [
   {
@@ -53,6 +54,7 @@ export default function Nav() {
             />
           ))}
         </div>
+        <Footer />
       </div>
     </motion.div>
   );
