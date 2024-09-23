@@ -18,7 +18,7 @@ export default function Links({ data, isActive, setSelectedIndicator }) {
       <motion.div
         variants={scale}
         animate={isActive ? "open" : "closed"}
-        className="absolute -left-[30px] h-[10px] w-[10px] rounded-full bg-slate-200/30"
+        className="absolute -left-[30px] h-[10px] w-[10px] rounded-full bg-slate-800"
       />
       <Link href={href}>{title}</Link>
     </motion.div>
