@@ -1,5 +1,5 @@
 import "./globals.css";
-import MobileNav from "./components/MobileNav";
+import MobileNav from "./components/MobileNav/MobileNav";
 
 export const metadata = {
   title: "Create Next App",
