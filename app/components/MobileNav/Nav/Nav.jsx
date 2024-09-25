@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { menuSlide } from "../../../lib/anim";
 import Links from "./Links/Links";
 import Footer from "./Footer/Footer";
+import Curve from "./Curve/Curve";
 
 const navItems = [
   {
@@ -35,7 +36,7 @@ export default function Nav() {
       initial="initial"
       animate="enter"
       exit="exit"
-      className="fixed right-[0] top-0 h-[100vh] w-[85vw] bg-slate-200/70 text-slate-800"
+      className="fixed right-[0] top-0 h-[100vh] w-[85vw] bg-slate-300 text-slate-800"
     >
       <div className="box-border flex h-full flex-col justify-between p-16">
         <div
@@ -56,6 +57,7 @@ export default function Nav() {
         </div>
         <Footer />
       </div>
+      <Curve />
     </motion.div>
   );
 }
